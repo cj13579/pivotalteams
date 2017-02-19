@@ -2,6 +2,15 @@
 
 _pivotalteams_ allows you to connect a Pivotal Tracker project and a Microsoft Teams channel. It's a C# script that is designed to be deployed as an Azure Function App.
 
+Currently _pivotalteams_ will look for the following Pivotal Tracker activities but you can add more just by adding more if blocks to the code:
+
+- Story added
+- Story started
+- Story finished
+- Story delivered
+- Story accepted
+- Story rejected
+
 ## Deployment
 
 1. Create an _Incoming Webhook_ connector in your channel in Microsoft Teams and copy the URL that you're given.

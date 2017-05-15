@@ -15,7 +15,11 @@ Currently _pivotalteams_ will look for the following Pivotal Tracker activities 
 
 1. Create an _Incoming Webhook_ connector in your channel in Microsoft Teams and copy the URL that you're given.
 1. Create a new Function App from the Azure Portal and paste the code from `pivotalteams.csx`
-1. Create an environment variable called `TEAMS_URL` and set the value to be the URL from the previosly created Microsoft Teams connector.
+1. Update the script that you have just deployed using the Webhook connector URL you copied from Teams. 
+1. Click Save.
+1. Copy the Function App URL
+1. Under `Settings` in your Pivotal Tracker project, add a WebHook using the Function App URL.
+1. Do something in Pivotal tracker and check it came through to your channel!
 
 ## Contribute
 
